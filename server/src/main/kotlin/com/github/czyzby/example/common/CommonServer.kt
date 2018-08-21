@@ -1,5 +1,5 @@
 package com.github.czyzby.example.common
 
-// Caveat: Kotlin file name cannot be the same as the one in common project.
-
-actual fun getAnswer() = 42
+// Should be an error: Declaration annotated with '@OptionalExpectation' can only be used in common module sources
+@Optional("Bar")
+class Bar
